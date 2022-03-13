@@ -1,0 +1,23 @@
+<p>ng-style-ng-class works!</p>
+
+<div [ngClass]="{class1: false}">
+  <h3>ng class</h3>
+  <h4 [class.test]="true" >test</h4>
+  <h5 [ngClass]="{class2: true}">Lorem ipsum dolor sit amet.</h5>
+</div>
+
+
+<div [ngStyle]="{'color': 'red'}">
+  <h3>ng style</h3>
+  <h4 [ngStyle]="{'color':'blue'}">test</h4>
+  <h5 [ngStyle]="{'color':'yellow'}">Lorem ipsum dolor sit amet.</h5>
+</div>
+
+
+<!--dynamic styles-->
+<button (click)="toggle()">toggle</button>
+<div [ngClass]="{invisible: visibility}">
+  <h3>visibility</h3>
+  <p>Lorem ipsum dolor sit amet.</p>
+</div>
+

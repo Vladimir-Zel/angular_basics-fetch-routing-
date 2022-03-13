@@ -1,0 +1,11 @@
+<p>one-way works!</p>
+
+events
+<!--<button *ngIf="isCollapsed" (click)="toggleCollapse()">show</button>-->
+<!--<button *ngIf="!isCollapsed" (click)="toggleCollapse()">del</button>-->
+<button (click)="toggleCollapse()">{{isCollapsed?"Отобразить":"Скрыть"}}</button>
+<div *ngIf="!isCollapsed">
+<ul>
+  <li *ngFor="let item of items">{{item}}</li>
+</ul>
+</div>
